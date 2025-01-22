@@ -13,7 +13,8 @@ public class Partecipazione {
     @Enumerated(EnumType.STRING)
     private Stato stato;
 
-
+    public Partecipazione(long l, Object o, Stato stato) {
+    }
 
 
     public Long getId_partecipazione() {

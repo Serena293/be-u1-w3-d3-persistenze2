@@ -2,6 +2,7 @@ package epicode.entities;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -34,6 +35,9 @@ public class Persona {
         this.dataDiNascita = dn;
         this.sesso =s;
         this.listaPartecipazioni = lp;
+    }
+
+    public Persona(String n, String c, String e, LocalDate localDate, Character option, ArrayList<Object> partecipazioni) {
     }
 
     public Long getId() {

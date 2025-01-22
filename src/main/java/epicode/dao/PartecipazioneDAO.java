@@ -36,7 +36,7 @@ public class PartecipazioneDAO {
     public void  delete(Long id){
         em.getTransaction().begin();
         try{
-           Partecipazione trovata = em.find(partecipazione.class, id);
+           Partecipazione trovata = em.find(Partecipazione.class, id);
             if(trovata != null){
                 em.remove(trovata);
                 em.getTransaction().commit();
