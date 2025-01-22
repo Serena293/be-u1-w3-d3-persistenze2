@@ -43,7 +43,7 @@ public class PersonaDAO {
         }
         //read, recupera l'id dell'istanza persona
     public Persona getById(Long id){
-        return  (em.find(Persona.class, id));
+        return  em.find(Persona.class, id);
     }
 
 
